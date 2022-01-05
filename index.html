@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <div class="header">
+            <h2>Application For Permission To Date My Daughter</h2>
+        </div>
+
+        <div class="form-section">
+            <p> <span>Note:</span> Form is to be completed at least 21 days prior to date</p>
+            <form>
+                 <fieldset>
+                    <legend>Personal Details</legend> 
+                    <p>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name here" required>
+                    </p>
+                    <p>
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" name="address" placeholder="Enter your address here" required>
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your name here" required>
+                    </p>
+                    <p>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your number here" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}-[0-9]{3}" required>
+                    </p>
+                    <p>
+                        <label for="iq">IQ:</label>
+                        <input type="number" id="iq" name="iq" placeholder="Enter your iq here" required>
+                    </p>
+                    <p>
+                        Gender:
+                        <br>
+                        <input type="radio" id="male" name="gender" value="Male">
+                        <label for="male">Male</label>
+                        <br>
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="female">Female</label>
+                        <br>
+                        <input type="radio" id="other" name="gender" value="Other">
+                        <label for="other">Other</label>
+                    </p>
+                    <p>
+                        <label for="date">Date of Proposed Outing:</label>
+                        <input type="date" name="date" id="date" required>
+                    </p>
+                 </fieldset>
+
+                 <fieldset>
+                    <p>Check All That Apply</p>
+                    <input type="checkbox" id="condition1" name="condition1" value="tattoos">
+                    <label for="condition1">I have tattoos and/or piercings</label>
+                    <br>
+                    <input type="checkbox" id="condition2" name="condition2" value="older">
+                    <label for="condition2">I am more than 2 years older than my daughter</label>
+                    <br>
+                    <input type="checkbox" id="condition3" name="condition3" value="own">
+                    <label for="condition3">I own a panel van or V8 ute</label>
+                    <br>
+                    <input type="checkbox" id="condition4" name="condition4" value="work">
+                    <label for="condition4">I work full-time</label>
+                    <br>
+                    <input type="checkbox" id="condition5" name="condition5" value="rich">
+                    <label for="condition5">My parents are rich</label>
+                    <br>
+                    <input type="checkbox" id="condition6" name="condition6" value="location">
+                    <label for="condition6">Is the date at a well lit public location</label>
+                    <br>
+                 </fieldset>
+                 <fieldset>
+                    <p>
+                        <label for="politics">Political Persuasion:</label>
+                        <select name="politics" id="politics">
+                            <option value="left wing">Left Wing</option>
+                            <option value="right wing">Right Wing</option>
+                            <option value="conservative">Conservative</option>
+                            <option value="nazi">Nazi</option>
+                        </select>
+
+                        <label for="education">Education Level Completed:</label>
+                        <select name="education" id="education">
+                            <option value="university">University</option>
+                            <option value="college">College</option>
+                            <option value="high school">High School</option>
+                            <option value="school">School</option>
+                            <option value="none">None</option>
+                        </select>
+                    </p>
+                 </fieldset>
+                 <fieldset>
+                    <legend>Essay Section</legend>
+                    <label for="reason">In 50 words or more explain why you want to date my daughter</label>
+                    <br><br>
+                    <textarea id="reason" name="reason" rows="4" cols="50" placeholder="Enter text here"></textarea>
+                    <br><br>
+                    <label for="contact">Please upload contact details for 2 references</label>
+                    <br><br>
+                    <textarea id="contact" name="contact" rows="4" cols="50" placeholder="Enter text here"></textarea> 
+                    <br><br>
+                    <label for="image">Upload Police Clearance Certificate, Bank Statement and Medical Certifiates here:</label>
+                    <input type="file" name="image" id="image">
+                 </fieldset>
+                 <input class="btn" type="submit" value="Send Your Application">
+            </form>
+        </div>
+    </section>
+</body>
+</html>

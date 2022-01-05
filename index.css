@@ -1,0 +1,56 @@
+body{
+    background-color: #FAFAD2;
+    font-family: 'Oswald', sans-serif;
+}
+
+section{
+    width: 70%;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #bebec0;
+    border-radius: 20px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header{
+    padding: 10px;
+    text-align: center;
+}
+
+.form-section > p{
+    font-size: 25px;
+}
+
+.form-section > p > span{
+    font-weight: 900;
+}
+
+input,select{
+    margin-left: 10px;
+}
+
+
+fieldset{
+    margin:15px;
+    border: 1px solid #dfdfdf;
+}
+
+legend{
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.btn{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: red;
+    color: whitesmoke;
+    border: none;
+    padding: 10px ;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+}
